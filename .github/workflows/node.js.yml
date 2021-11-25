@@ -32,4 +32,4 @@ jobs:
     - name: check Jscramble version
       run: jscrambler --version
     - name: Api call
-      run: jscrambler -a ${{ secrets.YOUR_ACCESS_KEY }} -s ${{ secrets.YOUR_SECRET_KEY }} -i "619e0233e53ca700196a596b" -o output.js 
+      run: jscrambler -a ${{ secrets.YOUR_ACCESS_KEY }} -s ${{ secrets.YOUR_SECRET_KEY }} -o ./ build/**/*.*
