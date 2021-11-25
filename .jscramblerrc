@@ -5,7 +5,7 @@
   },
   "applicationId": "619e0233e53ca700196a596b",
   "filesSrc": [
-   "./.next/**/*.html",
+   "./src/**/*.js",
    "./.next/**/*.js"
  ],
  "filesDest": "./",
