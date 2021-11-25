@@ -21,14 +21,17 @@ jobs:
         node-version: '14'
     - run: npm install
     - run: npm test
+    
   protectJscrambler:
     name: Jscrambler 
-    needs: build
     runs-on: ubuntu-latest
     steps:
+    - name: test
+      run: npm i
     - name: "Install Jscrambler cli"
       run: npm install -g jscrambler
     - name: check Jscramble version
       run: jscrambler --version
     - name: Api call
-      run: DEBUG=true jscrambler -a ${{ secrets.YOUR_ACCESS_KEY }} -s ${{ secrets.YOUR_SECRET_KEY }} -o output.js src/**/*.js
+      run:  jscrambler -a ${{ secrets.YOUR_ACCESS_KEY }} -s ${{ secrets.YOUR_SECRET_KEY }} -o ./ build/**/*.*
+    - run: npm run build
