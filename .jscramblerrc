@@ -9,7 +9,14 @@
    "./.next/**/*.js"
  ],
  "filesDest": "./",
-  "params": [],
+  "params": [
+    {
+      "name": "identifiersRenaming"
+    },
+    {
+      "name": "whitespaceRemoval"
+    }
+  ],
   "areSubscribersOrdered": false,
   "useRecommendedOrder": true,
   "jscramblerVersion": "7.1",
