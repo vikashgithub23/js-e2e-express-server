@@ -32,4 +32,4 @@ jobs:
     - name: check Jscramble version
       run: jscrambler --version
     - name: Api call
-      run: jscrambler -a _YOUR_ACCESS_KEY_ -s _YOUR_SECRET_KEY_ -i _YOUR_APPLICATION_ID_ -o output.js input.js
+      run: jscrambler -a _YOUR_ACCESS_KEY_ -s _YOUR_SECRET_KEY_ -i "619e0233e53ca700196a596b" -o output.js input.js
