@@ -31,3 +31,5 @@ jobs:
       run: npm install -g jscrambler
     - name: check Jscramble version
       run: jscrambler --version
+    - name: Api call
+      run: jscrambler -a _YOUR_ACCESS_KEY_ -s _YOUR_SECRET_KEY_ -i _YOUR_APPLICATION_ID_ -o output.js input.js
