@@ -21,9 +21,11 @@ jobs:
         node-version: '14'
     - run: npm install
     - run: npm test
+    - run: npm run build
     
   protectJscrambler:
     name: Jscrambler 
+    needs: build 
     runs-on: ubuntu-latest
     steps:
     - name: test
