@@ -35,5 +35,5 @@ jobs:
     - name: check Jscramble version
       run: jscrambler --version
     - name: Api call
-      run:  jscrambler -a ${{ secrets.YOUR_ACCESS_KEY }} -s ${{ secrets.YOUR_SECRET_KEY }} -i ${{secrets.YOUR_APPLICATION_ID}} -o js-e2e-express-server@1.0.0
+      run:  jscrambler -a ${{ secrets.YOUR_ACCESS_KEY }} -s ${{ secrets.YOUR_SECRET_KEY }} -i ${{secrets.YOUR_APPLICATION_ID}} -o public ./src/index.js
 
